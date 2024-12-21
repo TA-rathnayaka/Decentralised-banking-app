@@ -16,7 +16,6 @@
     "copy:types": "rsync -avr .dfx/$(echo ${DFX_NETWORK:-'**'})/canisters/** --exclude='assets/' --exclude='idl/' --exclude='*.wasm' --exclude='*.most' --delete src/declarations"
   },
   "devDependencies": {
-    "@dfinity/agent": "2.2.0",
     "@dfinity/candid": "2.2.0",
     "@dfinity/principal": "2.2.0",
     "assert": "2.0.0",
@@ -37,5 +36,8 @@
     "last 2 firefox version",
     "last 2 safari version",
     "last 2 edge version"
-  ]
+  ],
+  "dependencies": {
+    "@dfinity/agent": "^0.18.0"
+  }
 }
